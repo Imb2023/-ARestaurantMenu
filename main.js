@@ -26,11 +26,13 @@ loadVideo(currentTab, currentVideoIndex);
 videoContainer.addEventListener('touchstart', (event) => {
   startX = event.touches[0].clientX;
   startY = event.touches[0].clientY;
+  event.preventDefault(); // Prevent default action to avoid page refresh
 });
 
 videoContainer.addEventListener('touchend', (event) => {
   endX = event.changedTouches[0].clientX;
   endY = event.changedTouches[0].clientY;
+  event.preventDefault(); // Prevent default action to avoid page refresh
   handleSwipe();
 });
 
@@ -57,6 +59,9 @@ function handleSwipe() {
     if (deltaY > 0) {
       // Swipe up detected
       switchVideo(currentVideoIndex + 1);
+    } else if (deltaY < 0) {
+      // Swipe down detected (you can implement an action if needed)
+      // Example: switchVideo(currentVideoIndex - 1);
     }
   }
 }
