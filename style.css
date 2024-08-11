@@ -11,7 +11,10 @@ body, html {
 /* Basic styling */
 .video-container {
   position: relative;
+  display: flex;
   width: 100vw;
+  justify-content: center;
+  align-items: center;
   height: calc(100vh - 50px); /* Reduce height to account for the tab menu */
   overflow: hidden;
 }
@@ -22,8 +25,9 @@ video {
   object-fit: cover;
 }
 .image {
-  width: 100%;
+  width: auto;
   height: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 
