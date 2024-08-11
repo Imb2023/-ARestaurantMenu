@@ -5,3 +5,5 @@
 
 
 If you dont have enough photos or videos you can use a menu picture and the swipng to quickly move from category to category. You can also try to implement time based menus or quickly change to holiday menus
+
+Most of the images were generated using geminiAI. if you can find one where you dont have to sign up please share it

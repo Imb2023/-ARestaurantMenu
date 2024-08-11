@@ -10,36 +10,22 @@
 
   <div id="loading-screen">
     <div class="spinner"></div>
-    <p>the food is getting prepared </p>
-</div>
+    <p>The food is getting prepared...</p>
+  </div>
+
   <div class="video-container">
-    <video id="video" controls></video>
+    <video id="video" controls style="display: none;"></video>
+    <img id="image" class="image" alt="Image content" style="display: none;">
   </div>
+
   <div class="tab-menu">
-    <div class="tab" data-tab="1">Home</div>
-    <div class="tab" data-tab="2">Explore</div>
-    <div class="tab" data-tab="3">Profile</div>
+    <div class="tab" data-tab="1">Specials</div>
+    <div class="tab" data-tab="2">Lunch</div>
+    <div class="tab" data-tab="3">Dinner</div>
+    <div class="tab" data-tab="4">Drinks</div>
+    <div class="tab" data-tab="5">Desserts</div>
   </div>
+
   <script src="main.js"></script>
-  <script>
-    // script.js
-window.addEventListener('load', function() {
-    const video = document.getElementById('video');
-    const loadingScreen = document.getElementById('loading-screen');
-    const content = document.getElementById('video-container');
-
-    video.addEventListener('canplaythrough', function() {
-        loadingScreen.style.display = 'none';
-        content.style.display = 'block';
-    });
-
-    // Fallback in case 'canplaythrough' event doesn't fire
-    setTimeout(function() {
-        loadingScreen.style.display = 'none';
-        content.style.display = 'block';
-    }, 10000); // 10 seconds timeout as a fallback
-});
-
-  </script>
 </body>
 </html>

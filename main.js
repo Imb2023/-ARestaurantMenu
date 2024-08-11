@@ -1,91 +1,113 @@
+// DOM Elements
 const videoContainer = document.querySelector('.video-container');
 const video = document.getElementById('video');
+const image = document.getElementById('image');
 const tabs = document.querySelectorAll('.tab');
+const loadingScreen = document.getElementById('loading-screen');
+
+// State Variables
 let currentTab = 0;
 let currentVideoIndex = 0;
-let startX = 0;
-let startY = 0;
-let endX = 0;
-let endY = 0;
+let startX = 0, startY = 0;
+let endX = 0, endY = 0;
 
-// Sample video data for each tab (replace with actual video sources)
-const videoData = [
-  ['newvideo.mp4', 'oldvideo.mp4', 'pertat.mp4'],   // Tab 1 videos
-  ['oldvideo.mp4', 'newvideo.mp4'],           // Tab 2 videos
-  ['pertat.mp4', 'newvideo.mp4', 'newvideo.mp4']  // Tab 3 videos
+// Media Content Data
+const contentToDisplay = [
+  ['newvideo.mp4', 'oldvideo.mp4', 'pertat.mp4'],  // Tab 1 content
+  ['oldvideo.mp4', 'newvideo.mp4'],                // Tab 2 content
+  ['pertat.mp4', 'newvideo.mp4', 'newvideo.mp4'],  // Tab 3 content
+  ['image01.jpg','image02.jpg'],                   // Tab 4 images
+  ['image03.jpg','image06.jpg'],                   // Tab 5 images
 ];
 
-function loadVideo(tabIndex, videoIndex) {
-  video.src = videoData[tabIndex][videoIndex];
-  video.load();
+// Initialize the first content
+window.addEventListener('load', function() {
+  loadContent(currentTab, currentVideoIndex);
+});
+
+// Event Listeners
+videoContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
+videoContainer.addEventListener('touchend', handleTouchEnd, { passive: true });
+tabs.forEach((tab, index) => tab.addEventListener('click', () => switchTab(index)));
+
+// Load Content based on current tab and content index
+function loadContent(tabIndex, contentIndex) {
+  const currentContent = contentToDisplay[tabIndex][contentIndex];
+  const isVideo = currentContent.endsWith('.mp4');
+
+  if (isVideo) {
+    video.src = currentContent;
+    video.style.display = 'block';
+    image.style.display = 'none';
+    video.load();
+  } else {
+    image.src = currentContent;
+    video.style.display = 'none';
+    image.style.display = 'block';
+    loadingScreen.style.display = 'none';
+  }
+
+  if (isVideo) {
+    video.addEventListener('canplaythrough', function() {
+      loadingScreen.style.display = 'none';
+      video.style.display = 'block';
+    });
+
+    // Fallback in case 'canplaythrough' event doesn't fire
+    setTimeout(function() {
+      loadingScreen.style.display = 'none';
+      video.style.display = 'block';
+    }, 10000); // 10 seconds timeout as a fallback
+  } else {
+    // If it's an image, show it immediately
+    loadingScreen.style.display = 'none';
+    image.style.display = 'block';
+  }
 }
 
-loadVideo(currentTab, currentVideoIndex);
-
-// Event listeners for swipe gestures
-videoContainer.addEventListener('touchstart', (event) => {
+// Handle Swipe Gestures
+function handleTouchStart(event) {
   startX = event.touches[0].clientX;
   startY = event.touches[0].clientY;
-  event.preventDefault(); // Prevent default action to avoid page refresh
-});
+}
 
-videoContainer.addEventListener('touchend', (event) => {
+function handleTouchEnd(event) {
   endX = event.changedTouches[0].clientX;
   endY = event.changedTouches[0].clientY;
-  event.preventDefault(); // Prevent default action to avoid page refresh
   handleSwipe();
-});
+}
 
-tabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => {
-    switchTab(index);
-  });
-});
-
+// Handle Swipe Direction
 function handleSwipe() {
   const deltaX = startX - endX;
   const deltaY = startY - endY;
   const threshold = 50; // Minimum distance for a swipe
 
   if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > threshold) {
-    if (deltaX > 0) {
-      // Swipe left detected
-      switchTab(currentTab + 1);
-    } else {
-      // Swipe right detected
-      switchTab(currentTab - 1);
-    }
+    deltaX > 0 ? switchTab(currentTab + 1) : switchTab(currentTab - 1);
   } else if (Math.abs(deltaY) > threshold) {
-    if (deltaY > 0) {
-      // Swipe up detected
-      switchVideo(currentVideoIndex + 1);
-    } else if (deltaY < 0) {
-      // Swipe down detected (you can implement an action if needed)
-      // Example: switchVideo(currentVideoIndex - 1);
-    }
+    deltaY > 0 ? switchContent(currentVideoIndex + 1) : switchContent(currentVideoIndex - 1);
   }
 }
 
+// Switch Tab
 function switchTab(index) {
   if (index < 0 || index >= tabs.length) return;
-  
-  currentTab = index;
-  currentVideoIndex = 0; // Reset video index when switching tabs
-  loadVideo(currentTab, currentVideoIndex);
 
-  tabs.forEach((tab, i) => {
-    tab.classList.toggle('active', i === index);
-  });
+  currentTab = index;
+  currentVideoIndex = 0; // Reset content index when switching tabs
+  loadContent(currentTab, currentVideoIndex);
+
+  tabs.forEach((tab, i) => tab.classList.toggle('active', i === index));
 }
 
-function switchVideo(index) {
-  if (index < 0 || index >= videoData[currentTab].length) return;
+// Switch Content within the Current Tab
+function switchContent(index) {
+  if (index < 0 || index >= contentToDisplay[currentTab].length) return;
 
   currentVideoIndex = index;
-  loadVideo(currentTab, currentVideoIndex);
+  loadContent(currentTab, currentVideoIndex);
 }
 
-// Infinite scrolling within the current tab
-video.addEventListener('ended', () => {
-  switchVideo(currentVideoIndex + 1);
-});
+// Handle Infinite Scrolling within the Current Tab
+video.addEventListener('ended', () => switchContent(currentVideoIndex + 1));
