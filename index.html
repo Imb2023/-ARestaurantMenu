@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <p>the food is getting prepared </p>
+</div>
   <div class="video-container">
     <video id="video" controls></video>
   </div>
@@ -16,5 +21,25 @@
     <div class="tab" data-tab="3">Profile</div>
   </div>
   <script src="main.js"></script>
+  <script>
+    // script.js
+window.addEventListener('load', function() {
+    const video = document.getElementById('video');
+    const loadingScreen = document.getElementById('loading-screen');
+    const content = document.getElementById('video-container');
+
+    video.addEventListener('canplaythrough', function() {
+        loadingScreen.style.display = 'none';
+        content.style.display = 'block';
+    });
+
+    // Fallback in case 'canplaythrough' event doesn't fire
+    setTimeout(function() {
+        loadingScreen.style.display = 'none';
+        content.style.display = 'block';
+    }, 10000); // 10 seconds timeout as a fallback
+});
+
+  </script>
 </body>
 </html>
