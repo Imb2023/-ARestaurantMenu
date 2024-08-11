@@ -16,8 +16,8 @@ const contentToDisplay = [
   ['newvideo.mp4', 'oldvideo.mp4', 'pertat.mp4'],  // Tab 1 content
   ['oldvideo.mp4', 'newvideo.mp4'],                // Tab 2 content
   ['pertat.mp4', 'newvideo.mp4', 'newvideo.mp4'],  // Tab 3 content
-  ['image01.jpg','image02.jpg'],                   // Tab 4 images
-  ['image03.jpg','image06.jpg'],                   // Tab 5 images
+  ['image01.jpg','image02.jpg','image06.jpg','image08.jpg','image01.jpg','image09.jpg'],                   // Tab 4 images
+  ['image03.jpg','image06.jpg','image01.jpg','image05.jpg'],                   // Tab 5 images
 ];
 
 // Initialize the first content
