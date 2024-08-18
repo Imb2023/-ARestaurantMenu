@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+const contentToDisplay = [
+  ['image01.jpg', 'image02.jpg', 'image03.jpg'],
+  ['image04.jpg', 'image05.jpg','image01.jpg'],
+  ['image07.jpg', 'image08.jpg', 'image09.jpg','image01.jpg'],
+  ['image01.jpg', 'image02.jpg', 'image06.jpg','image01.jpg',],
+  ['image03.jpg', 'image06.jpg', 'image01.jpg','image01.jpg',],
+];
