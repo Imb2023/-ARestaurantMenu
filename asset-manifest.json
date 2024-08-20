@@ -1,25 +1,20 @@
 {
   "files": {
     "main.css": "/swipemenu/static/css/main.0517c5db.css",
-    "main.js": "/swipemenu/static/js/main.03a92418.js",
+    "main.js": "/swipemenu/static/js/main.83b4bffb.js",
     "static/js/453.63456261.chunk.js": "/swipemenu/static/js/453.63456261.chunk.js",
-    "static/media/image05.jpg": "/swipemenu/static/media/image05.31e2a68159c8fbb0ab5c.jpg",
-    "static/media/image09.jpg": "/swipemenu/static/media/image09.c860804c5d75c097f3e6.jpg",
-    "static/media/image06.jpg": "/swipemenu/static/media/image06.5ac0ef57f966f1a06b65.jpg",
-    "static/media/image02.jpg": "/swipemenu/static/media/image02.e457f2ea3f942cad57e9.jpg",
-    "static/media/image03.jpg": "/swipemenu/static/media/image03.a8d689b15817e20d0773.jpg",
-    "static/media/image01.jpg": "/swipemenu/static/media/image01.11b22f7dd973184b6b99.jpg",
-    "static/media/image08.jpg": "/swipemenu/static/media/image08.bc05f804e9073eadcccd.jpg",
-    "static/media/image04.jpg": "/swipemenu/static/media/image04.f5ad8a4fd42cac686448.jpg",
-    "static/media/image07.jpg": "/swipemenu/static/media/image07.5770665b8d86503fcf17.jpg",
+    "static/media/carnitaMainMenuSaleMP.mp4": "/swipemenu/static/media/carnitaMainMenuSaleMP.956efafabf6a4712f218.mp4",
+    "static/media/specialOrderCuchu.mp4": "/swipemenu/static/media/specialOrderCuchu.4bf4d7dcfab705ccf238.mp4",
+    "static/media/specialMenuBackground.png": "/swipemenu/static/media/specialMenuBackground.e58b6aa06575b5527811.png",
     "static/media/logo.svg": "/swipemenu/static/media/logo.ad501de9773a116e2b238921a3730e34.svg",
+    "static/media/01 Family food.png": "/swipemenu/static/media/01 Family food.3f32bed140853b7631d4.png",
     "index.html": "/swipemenu/index.html",
     "main.0517c5db.css.map": "/swipemenu/static/css/main.0517c5db.css.map",
-    "main.03a92418.js.map": "/swipemenu/static/js/main.03a92418.js.map",
+    "main.83b4bffb.js.map": "/swipemenu/static/js/main.83b4bffb.js.map",
     "453.63456261.chunk.js.map": "/swipemenu/static/js/453.63456261.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0517c5db.css",
-    "static/js/main.03a92418.js"
+    "static/js/main.83b4bffb.js"
   ]
 }
