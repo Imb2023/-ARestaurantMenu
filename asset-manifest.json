@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/swipemenu/static/css/main.f785c555.css",
-    "main.js": "/swipemenu/static/js/main.8985a672.js",
+    "main.js": "/swipemenu/static/js/main.9914b3f1.js",
     "static/js/453.63456261.chunk.js": "/swipemenu/static/js/453.63456261.chunk.js",
     "static/media/tacossuaperro.png": "/swipemenu/static/media/tacossuaperro.f62ad2f3a0eb8d176fd7.png",
-    "static/media/carnitaMainMenuSaleMP.MP4": "/swipemenu/static/media/carnitaMainMenuSaleMP.956efafabf6a4712f218.MP4",
-    "static/media/specialOrderCuchu.MP4": "/swipemenu/static/media/specialOrderCuchu.4bf4d7dcfab705ccf238.MP4",
+    "static/media/carnitaMainMenuSaleMP.mp4": "/swipemenu/static/media/carnitaMainMenuSaleMP.956efafabf6a4712f218.mp4",
+    "static/media/specialOrderCuchu.mp4": "/swipemenu/static/media/specialOrderCuchu.4bf4d7dcfab705ccf238.mp4",
     "static/media/specialMenuBackground.png": "/swipemenu/static/media/specialMenuBackground.e58b6aa06575b5527811.png",
     "static/media/logo.svg": "/swipemenu/static/media/logo.ad501de9773a116e2b238921a3730e34.svg",
     "index.html": "/swipemenu/index.html",
     "main.f785c555.css.map": "/swipemenu/static/css/main.f785c555.css.map",
-    "main.8985a672.js.map": "/swipemenu/static/js/main.8985a672.js.map",
+    "main.9914b3f1.js.map": "/swipemenu/static/js/main.9914b3f1.js.map",
     "453.63456261.chunk.js.map": "/swipemenu/static/js/453.63456261.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f785c555.css",
-    "static/js/main.8985a672.js"
+    "static/js/main.9914b3f1.js"
   ]
 }
