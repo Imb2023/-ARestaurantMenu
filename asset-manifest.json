@@ -1,18 +1,16 @@
 {
   "files": {
-    "main.css": "/swipemenu/static/css/main.ca31e854.css",
-    "main.js": "/swipemenu/static/js/main.7d53ac8c.js",
+    "main.css": "/swipemenu/static/css/main.0517c5db.css",
+    "main.js": "/swipemenu/static/js/main.ade79ac6.js",
     "static/js/453.63456261.chunk.js": "/swipemenu/static/js/453.63456261.chunk.js",
-    "static/media/tacossuaperro.png": "/swipemenu/static/media/tacossuaperro.f62ad2f3a0eb8d176fd7.png",
-    "static/media/specialMenuBackground.png": "/swipemenu/static/media/specialMenuBackground.e58b6aa06575b5527811.png",
     "static/media/logo.svg": "/swipemenu/static/media/logo.ad501de9773a116e2b238921a3730e34.svg",
     "index.html": "/swipemenu/index.html",
-    "main.ca31e854.css.map": "/swipemenu/static/css/main.ca31e854.css.map",
-    "main.7d53ac8c.js.map": "/swipemenu/static/js/main.7d53ac8c.js.map",
+    "main.0517c5db.css.map": "/swipemenu/static/css/main.0517c5db.css.map",
+    "main.ade79ac6.js.map": "/swipemenu/static/js/main.ade79ac6.js.map",
     "453.63456261.chunk.js.map": "/swipemenu/static/js/453.63456261.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca31e854.css",
-    "static/js/main.7d53ac8c.js"
+    "static/css/main.0517c5db.css",
+    "static/js/main.ade79ac6.js"
   ]
 }
