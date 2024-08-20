@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/swipemenu/static/css/main.6bf947e8.css",
+    "main.css": "/swipemenu/static/css/main.ca31e854.css",
     "main.js": "/swipemenu/static/js/main.7d53ac8c.js",
     "static/js/453.63456261.chunk.js": "/swipemenu/static/js/453.63456261.chunk.js",
     "static/media/tacossuaperro.png": "/swipemenu/static/media/tacossuaperro.f62ad2f3a0eb8d176fd7.png",
     "static/media/specialMenuBackground.png": "/swipemenu/static/media/specialMenuBackground.e58b6aa06575b5527811.png",
     "static/media/logo.svg": "/swipemenu/static/media/logo.ad501de9773a116e2b238921a3730e34.svg",
     "index.html": "/swipemenu/index.html",
-    "main.6bf947e8.css.map": "/swipemenu/static/css/main.6bf947e8.css.map",
+    "main.ca31e854.css.map": "/swipemenu/static/css/main.ca31e854.css.map",
     "main.7d53ac8c.js.map": "/swipemenu/static/js/main.7d53ac8c.js.map",
     "453.63456261.chunk.js.map": "/swipemenu/static/js/453.63456261.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bf947e8.css",
+    "static/css/main.ca31e854.css",
     "static/js/main.7d53ac8c.js"
   ]
 }
