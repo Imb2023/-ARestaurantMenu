@@ -1,12 +1,15 @@
-# Getting Started with Create React App
+# Getting Started with swipeMenu Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
+its a web app menu for mobile use
 
 ## Available Scripts
 
+## How To start the creation of the app
+
 In the project directory, you can run:
 
-### `npm start`
+## `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -68,12 +71,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-const contentToDisplay = [
-  ['image01.jpg', 'image02.jpg', 'image03.jpg'],
-  ['image04.jpg', 'image05.jpg','image01.jpg'],
-  ['image07.jpg', 'image08.jpg', 'image09.jpg','image01.jpg'],
-  ['image01.jpg', 'image02.jpg', 'image06.jpg','image01.jpg',],
-  ['image03.jpg', 'image06.jpg', 'image01.jpg','image01.jpg',],
-];
