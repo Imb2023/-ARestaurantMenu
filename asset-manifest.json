@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/swipemenu/static/css/main.5eb4f8fd.css",
+    "main.css": "/swipemenu/static/css/main.067b8078.css",
     "main.js": "/swipemenu/static/js/main.806c91f7.js",
     "static/js/453.63456261.chunk.js": "/swipemenu/static/js/453.63456261.chunk.js",
     "static/media/main_menu.png": "/swipemenu/static/media/main_menu.cfb91498c7b178ffbe8f.png",
@@ -8,12 +8,12 @@
     "static/media/carnitaMainMenuSaleMP.mp4": "/swipemenu/static/media/carnitaMainMenuSaleMP.d446fb4ba41575a20ff5.mp4",
     "static/media/logo.svg": "/swipemenu/static/media/logo.ad501de9773a116e2b238921a3730e34.svg",
     "index.html": "/swipemenu/index.html",
-    "main.5eb4f8fd.css.map": "/swipemenu/static/css/main.5eb4f8fd.css.map",
+    "main.067b8078.css.map": "/swipemenu/static/css/main.067b8078.css.map",
     "main.806c91f7.js.map": "/swipemenu/static/js/main.806c91f7.js.map",
     "453.63456261.chunk.js.map": "/swipemenu/static/js/453.63456261.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5eb4f8fd.css",
+    "static/css/main.067b8078.css",
     "static/js/main.806c91f7.js"
   ]
 }
