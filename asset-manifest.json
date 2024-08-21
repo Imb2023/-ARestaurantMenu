@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/swipemenu/static/css/main.ac3399fe.css",
-    "main.js": "/swipemenu/static/js/main.e7f5ce37.js",
+    "main.css": "/swipemenu/static/css/main.6b1f6edf.css",
+    "main.js": "/swipemenu/static/js/main.209e1553.js",
     "static/js/453.63456261.chunk.js": "/swipemenu/static/js/453.63456261.chunk.js",
     "static/media/carnitaMainMenuSaleMP.mp4": "/swipemenu/static/media/carnitaMainMenuSaleMP.956efafabf6a4712f218.mp4",
     "static/media/specialOrderCuchu.mp4": "/swipemenu/static/media/specialOrderCuchu.4bf4d7dcfab705ccf238.mp4",
     "static/media/logo.svg": "/swipemenu/static/media/logo.ad501de9773a116e2b238921a3730e34.svg",
     "index.html": "/swipemenu/index.html",
-    "main.ac3399fe.css.map": "/swipemenu/static/css/main.ac3399fe.css.map",
-    "main.e7f5ce37.js.map": "/swipemenu/static/js/main.e7f5ce37.js.map",
+    "main.6b1f6edf.css.map": "/swipemenu/static/css/main.6b1f6edf.css.map",
+    "main.209e1553.js.map": "/swipemenu/static/js/main.209e1553.js.map",
     "453.63456261.chunk.js.map": "/swipemenu/static/js/453.63456261.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac3399fe.css",
-    "static/js/main.e7f5ce37.js"
+    "static/css/main.6b1f6edf.css",
+    "static/js/main.209e1553.js"
   ]
 }
