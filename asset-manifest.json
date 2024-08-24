@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/swipemenu/static/css/main.067b8078.css",
-    "main.js": "/swipemenu/static/js/main.04e5b79e.js",
+    "main.js": "/swipemenu/static/js/main.fcd5413a.js",
     "static/js/453.051c49a9.chunk.js": "/swipemenu/static/js/453.051c49a9.chunk.js",
     "static/media/esvigi.svg": "/swipemenu/static/media/esvigi.3cfb5c374b3390219a371490ec79eea3.svg",
     "static/media/main_menu.png": "/swipemenu/static/media/main_menu.cfb91498c7b178ffbe8f.png",
+    "static/media/lastslidefrogeneric.svg": "/swipemenu/static/media/lastslidefrogeneric.e3389fff83b92ea2148e72c84149ee4e.svg",
     "static/media/The Westmire A56 Headset.png": "/swipemenu/static/media/The Westmire A56 Headset.66687b41755d68861938.png",
     "static/media/logo.svg": "/swipemenu/static/media/logo.ad501de9773a116e2b238921a3730e34.svg",
     "index.html": "/swipemenu/index.html",
     "main.067b8078.css.map": "/swipemenu/static/css/main.067b8078.css.map",
-    "main.04e5b79e.js.map": "/swipemenu/static/js/main.04e5b79e.js.map",
+    "main.fcd5413a.js.map": "/swipemenu/static/js/main.fcd5413a.js.map",
     "453.051c49a9.chunk.js.map": "/swipemenu/static/js/453.051c49a9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.067b8078.css",
-    "static/js/main.04e5b79e.js"
+    "static/js/main.fcd5413a.js"
   ]
 }
